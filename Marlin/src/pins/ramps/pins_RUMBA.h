@@ -42,15 +42,15 @@
 //
 // Servos
 //
-#define SERVO0_PIN                             5
+#define SERVO0_PIN                             4
 
 //
 // Limit Switches
 //
 #define X_MIN_PIN                             37
-#define X_MAX_PIN                             36
+//#define X_MAX_PIN                             36
 #define Y_MIN_PIN                             35
-#define Y_MAX_PIN                             34
+//#define Y_MAX_PIN                             34
 #define Z_MIN_PIN                             33
 #define Z_MAX_PIN                             32
 
@@ -101,7 +101,8 @@
   #if TEMP_SENSOR_0 == -1
     #define TEMP_0_PIN                         6  // Analog Input (connector *K1* on RUMBA thermocouple ADD ON is used)
   #else
-    #define TEMP_0_PIN                        15  // Analog Input (default connector for thermistor *T0* on rumba board is used)
+    //#define TEMP_0_PIN                        15  // Analog Input (default connector for thermistor *T0* on rumba board is used)
+    #define TEMP_0_PIN                          10	// E3D PT100 with amplifier board
   #endif
 #endif
 
@@ -229,7 +230,7 @@
 #endif
 
 #if IS_NEWPANEL
-  #define BTN_EN1                             11
-  #define BTN_EN2                             12
+  #define BTN_EN1                             12
+  #define BTN_EN2                             11
   #define BTN_ENC                             43
 #endif
